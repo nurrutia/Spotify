@@ -7,9 +7,16 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
-Song.destroy_all
 Genre.destroy_all
+Song.destroy_all
+
 
 User.create!(email: "nico@nico.cl", password:"admin123")
 User.create!(email: "nico2@nico.cl", password:"admin123")
 User.create!(email: "nico3@nico.cl", password:"admin123")
+g1 = Genre.create!(name: "Rock")
+g2 = Genre.create!(name: "Metal")
+g3 = Genre.create!(name: "Cumbia")
+
+ => #<Song id: nil, name: nil, duration: nil, genres_id: nil, created_at: nil, updated_at: nil> 
+
